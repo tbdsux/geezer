@@ -4,6 +4,10 @@ import MemeContainer from '../components/MemeContainer'
 
 const today = new Date()
 
+function reloadWebsite() {
+    window.location.reload()
+}
+
 function Home({data}) {
     return (
         <Layout>
@@ -16,7 +20,7 @@ function Home({data}) {
                 <div className="text-center">
                     <h1 className="text-lighter font-black text-4xl tracking-wide uppercase">Geezer</h1>
                     <MemeContainer meme={data.meme} />
-                    <button className="px-8 mt-4 py-3 bg-mid-blue text-white text-sm font-light tracking-wide">next</button>
+                    <button onClick={reloadWebsite} className="px-8 mt-4 py-3 bg-mid-blue text-white text-sm font-light tracking-wide">next</button>
                 </div>
             </div>
         </Layout>
