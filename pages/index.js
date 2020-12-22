@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Layout, { SiteName } from '../components/Layout'
 import MemeContainer from '../components/MemeContainer'
 
-const today = new Date()
-
 function reloadWebsite() {
   window.location.reload()
 }
